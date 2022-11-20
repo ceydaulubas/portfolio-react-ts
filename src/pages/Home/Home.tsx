@@ -18,7 +18,7 @@ const Home = () => {
       </StyledContent>
       <StyledImage
         src='https://res.cloudinary.com/dxqyvjf5r/image/upload/v1668542625/ceyda_portfolio/image/ceyda_photo_mrw3cz.jpg'
-        alt='Ceyda Ulubas photo'
+        alt='Ceyda Ulubas business photo'
       />
     </StyledHome>
   );
