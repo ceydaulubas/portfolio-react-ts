@@ -15,14 +15,7 @@ import { images } from '../../assets/common/links';
 import ThemeToggle from '../../components/ThemeToggle/ThemeToggle';
 import { ThemeContext } from '../../App';
 
-import { CSSProperties } from 'react';
-
 const { logo } = images;
-
-// interface AppTheme {
-//   dark: CSSProperties;
-//   light: CSSProperties;
-// }
 
 const Navigation = () => {
   const [extendNavbar, setExtendNavbar] = useState(false);
