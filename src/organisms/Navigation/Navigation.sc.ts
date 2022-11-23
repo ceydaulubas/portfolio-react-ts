@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { devices } from '../../statics/devices';
+import { Colors, colorTheme, StyledTheme } from '../../assets/common/color';
 
 const { mobileS, mobileM, tabletS, tablet, laptop, laptopL, desktop, desktopL } = devices;
 
 export const NavigationContainer = styled.nav`
   width: 100%;
   height: ${(props: { extendNavbar: boolean }) => (props.extendNavbar ? '100vh' : '80px')};
-  /* background-color: black; */
   display: flex;
   flex-direction: column;
   @media (min-width: 700px) {
@@ -42,18 +42,18 @@ export const NavLinkContainer = styled.div`
 `;
 
 export const NavLink = styled(Link)`
-  color: #e2216a;
   font-size: x-large;
   font-family: Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif, sans-serif;
   text-decoration: none;
   margin: 10px;
+  color: ${({ theme }: StyledTheme) => theme.darkGrey};
   @media (max-width: 700px) {
     display: none;
   }
 `;
 
 export const NavLinkExtended = styled(Link)`
-  color: #e2216a;
+  color: ${({ theme }: StyledTheme) => theme.darkGrey};
   font-size: x-large;
   font-family: Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif, sans-serif;
   text-decoration: none;
@@ -71,7 +71,7 @@ export const OpenLinksButton = styled.button`
   width: 70px;
   height: 50px;
   background: none;
-  color: #e2216a;
+  /* color: #e2216a; */
   font-size: 45px;
   cursor: pointer;
   border: none;

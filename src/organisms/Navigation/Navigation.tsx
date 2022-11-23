@@ -19,37 +19,17 @@ import { CSSProperties } from 'react';
 
 const { logo } = images;
 
-interface AppTheme {
-  dark: CSSProperties;
-  light: CSSProperties;
-  common: CSSProperties;
-}
+// interface AppTheme {
+//   dark: CSSProperties;
+//   light: CSSProperties;
+// }
 
 const Navigation = () => {
   const [extendNavbar, setExtendNavbar] = useState(false);
   const { theme } = useContext(ThemeContext);
-  const headerStyle: AppTheme = {
-    dark: {
-      backgroundColor: 'black',
-      color: 'blue',
-    },
-    light: {
-      // backgroundColor: '#e0e0e0',
-      backgroundColor: 'transparent',
-      color: '#e2216a',
-    },
-    common: {
-      transition: 'all 1s ease',
-    },
-  };
-
-  const themeStyle = {
-    ...(theme === 'light' ? headerStyle.light : headerStyle.dark),
-    ...headerStyle.common,
-  };
 
   return (
-    <NavigationContainer extendNavbar={extendNavbar} style={themeStyle}>
+    <NavigationContainer extendNavbar={extendNavbar}>
       <NavInnerContainer>
         <LeftContainer>
           <Logo src={logo} alt='Ceyda Ulubas logo'></Logo>

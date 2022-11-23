@@ -4,12 +4,6 @@ import { devices } from '../../statics/devices';
 
 const { mobileS, mobileM, tabletS, tablet, laptop, laptopL, desktop, desktopL } = devices;
 
-// export const HomeContainer = styled.div`
-//   display: grid;
-//   justify-items: start;
-
-// `;
-
 export const StyledHome = styled.div`
   margin-top: 50px;
 `;

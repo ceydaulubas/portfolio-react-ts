@@ -1,15 +1,17 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Home, About, Projects, Skills } from './pages';
 import { Navigation } from './organisms';
 import { StyledApp } from './App.sc';
-export const ThemeContext = React.createContext({} as { theme: string; setTheme: any });
+import { ThemeProvider } from 'styled-components';
+import { colorTheme } from './assets/common/color';
 
-const App = () => {
-  const [theme, setTheme] = useState('light');
+export const ThemeContext = React.createContext({ theme: 'light', setTheme: () => {} } as { theme: 'light' | 'dark'; setTheme: Function });
 
+const SApp = () => {
+  const { theme } = useContext(ThemeContext);
   return (
-    <ThemeContext.Provider value={{ theme, setTheme }}>
+    <ThemeProvider theme={colorTheme[theme]}>
       <StyledApp>
         <BrowserRouter>
           <Navigation />
@@ -21,6 +23,16 @@ const App = () => {
           </Routes>
         </BrowserRouter>
       </StyledApp>
+    </ThemeProvider>
+  );
+};
+
+const App = () => {
+  const [theme, setTheme] = useState<'light' | 'dark'>('light');
+
+  return (
+    <ThemeContext.Provider value={{ theme, setTheme }}>
+      <SApp />
     </ThemeContext.Provider>
   );
 };
