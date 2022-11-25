@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Home, About, Projects, Skills } from '../../pages/index';
+import { Home, About, Projects, Skills, Contact } from '../../pages/index';
 import Navigation from '../Navigation/Navigation';
 import { StyledApp } from '../../App.sc';
 import { ThemeProvider } from 'styled-components';
@@ -19,6 +19,7 @@ const SApp = () => {
             <Route path='/about' element={<About />} />
             <Route path='/projects' element={<Projects />} />
             <Route path='/skills' element={<Skills />} />
+            <Route path='/contact' element={<Contact />} />
           </Routes>
         </BrowserRouter>
       </StyledApp>

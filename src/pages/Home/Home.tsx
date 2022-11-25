@@ -6,27 +6,15 @@ import Button from '../../assets/common/Button/Button';
 import { StyledHome, StyledTitle, StyledIntro, StyledButtons, StyledContent, StyledImage } from './Home.sc';
 import { ThemeContext } from '../../App';
 import { CSSProperties } from 'react';
-interface AppTheme {
-  dark: CSSProperties;
-  light: CSSProperties;
-}
+// interface AppTheme {
+//   dark: CSSProperties;
+//   light: CSSProperties;
+// }
 
 const Home = () => {
   const { theme } = useContext(ThemeContext);
-  const headerStyle: AppTheme = {
-    dark: {
-      backgroundImage: 'linear-gradient(90deg, #fadfdf5c, #312b2b 60%, #6b5151 90%, #54351e 100%',
-    },
-    light: {
-      backgroundColor: 'transparent',
-    },
-  };
-
-  const themeStyle = {
-    ...(theme === 'light' ? headerStyle.light : headerStyle.dark),
-  };
   return (
-    <StyledHome style={themeStyle}>
+    <StyledHome>
       <StyledContent>
         <StyledTitle>Hey!</StyledTitle>
         <StyledIntro>

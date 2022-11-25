@@ -65,7 +65,7 @@ export const projects = [
     id: '7',
     photo: gipgy,
     title: 'Giphy Api',
-    year: '2020',
+    year: '2021',
     description: 'This app shows all gifs when you write a word that you want to see as a gif.',
     stack: 'React Js, Axios, CSS',
     github: 'https://github.com/ceydaulubas/giphy-api-react',

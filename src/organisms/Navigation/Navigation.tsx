@@ -33,7 +33,7 @@ const Navigation = () => {
             <NavLink to='/about'>About</NavLink>
             <NavLink to='/projects'>Projects</NavLink>
             <NavLink to='/skills'>Skills</NavLink>
-            <NavLink to='/cv'>CV</NavLink>
+            <NavLink to='/contact'>Contact</NavLink>
             <NavLink to='/'>
               <ThemeToggle></ThemeToggle>
             </NavLink>
