@@ -9,7 +9,7 @@ type StyledButtonProps = {
 
 export const StyledButton = styled.a<StyledButtonProps>`
   z-index: 1;
-  padding: 0.4rem 2.5rem;
+  padding: 0.4rem;
   transition: all 0.2s ease-in;
   border-radius: 0.4rem;
   color: ${white};
@@ -53,4 +53,11 @@ export const StyledButton = styled.a<StyledButtonProps>`
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
       }
     `};
+
+  /* @media (max-width: 375px) {
+    font-size: 0.9rem;
+    font-weight: 500;
+    width: fit-content;
+    margin-right: 10px;
+  } */
 `;

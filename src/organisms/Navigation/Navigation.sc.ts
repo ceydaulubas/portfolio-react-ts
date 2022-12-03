@@ -46,14 +46,14 @@ export const NavLink = styled(Link)`
   font-family: Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif, sans-serif;
   text-decoration: none;
   margin: 10px;
-  color: ${({ theme }: StyledTheme) => theme.darkGrey};
+  color: ${({ theme }: StyledTheme) => theme.words};
   @media (max-width: 700px) {
     display: none;
   }
 `;
 
 export const NavLinkExtended = styled(Link)`
-  color: ${({ theme }: StyledTheme) => theme.darkGrey};
+  color: ${({ theme }: StyledTheme) => theme.words};
   font-size: x-large;
   font-family: Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif, sans-serif;
   text-decoration: none;

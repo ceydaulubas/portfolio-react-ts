@@ -11,6 +11,9 @@ export const colors = {
 };
 
 export interface Colors {
+  words: string;
+  backgroundColor: string;
+
   softPink: string;
   mediumRed: string;
   darkPink: string;
@@ -33,6 +36,9 @@ export interface StyledTheme {
 
 export const colorTheme: Theme = {
   light: {
+    words: '#435bb5',
+    backgroundColor: '#d4e8f7',
+
     softPink: '#f7c9c9',
     mediumRed: '#b92839ba',
     darkPink: '#e2216a',
@@ -44,6 +50,8 @@ export const colorTheme: Theme = {
     light: 'linear-gradient(90deg, #fadfdf5c, #f7c9c9 60%, #f8b4b4 90%, #fab27e 100%)',
   },
   dark: {
+    words: '#FFFFFF',
+    backgroundColor: '#000000',
     softPink: '#f7c9c9',
     mediumRed: '#b02892ba',
     darkPink: '#e2209a',

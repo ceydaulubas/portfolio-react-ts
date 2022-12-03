@@ -21,6 +21,10 @@ const Navigation = () => {
   const [extendNavbar, setExtendNavbar] = useState(false);
   const { theme } = useContext(ThemeContext);
 
+  const closeExtended = () => {
+    setExtendNavbar(false);
+  };
+
   return (
     <NavigationContainer extendNavbar={extendNavbar}>
       <NavInnerContainer>
@@ -32,7 +36,7 @@ const Navigation = () => {
             <NavLink to='/'>Home</NavLink>
             <NavLink to='/about'>About</NavLink>
             <NavLink to='/projects'>Projects</NavLink>
-            <NavLink to='/skills'>Skills</NavLink>
+            {/* <NavLink to='/skills'>Skills</NavLink> */}
             <NavLink to='/contact'>Contact</NavLink>
             <NavLink to='/'>
               <ThemeToggle></ThemeToggle>
@@ -49,11 +53,18 @@ const Navigation = () => {
       </NavInnerContainer>
       {extendNavbar && (
         <NavExtendedContainer>
-          <NavLinkExtended to='/'>Home</NavLinkExtended>
-          <NavLinkExtended to='/about'>About</NavLinkExtended>
-          <NavLinkExtended to='/projects'>Projects</NavLinkExtended>
-          <NavLinkExtended to='/skills'>Skills</NavLinkExtended>
-          <NavLinkExtended to='/cv'>CV</NavLinkExtended>
+          <NavLinkExtended to='/' onClick={() => closeExtended()}>
+            Home
+          </NavLinkExtended>
+          <NavLinkExtended to='/about' onClick={() => closeExtended()}>
+            About
+          </NavLinkExtended>
+          <NavLinkExtended to='/projects' onClick={() => closeExtended()}>
+            Projects
+          </NavLinkExtended>
+          {/* <NavLinkExtended to='/skills' onClick={() => closeExtended()}>
+            Skills
+          </NavLinkExtended> */}
           <NavLinkExtended to='/'>
             <ThemeToggle></ThemeToggle>
           </NavLinkExtended>

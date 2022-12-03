@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SApp from './organisms/SApp/SApp';
+import { SApp } from './organisms/index';
 
 export const ThemeContext = React.createContext({ theme: 'light', setTheme: () => {} } as { theme: 'light' | 'dark'; setTheme: Function });
 

@@ -10,7 +10,8 @@ export const StyledHome = styled.div`
 export const StyledContent = styled.div`
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 50%;
+  padding-left: 5%;
 `;
 export const StyledTitle = styled.h1`
   color: rgba(207, 47, 116);
@@ -31,8 +32,8 @@ export const StyledButtons = styled.div`
 export const StyledImage = styled.img`
   position: absolute;
   bottom: 320px;
-  right: 5%;
-  width: 300px;
-  border: 4mm ridge rgba(207, 47, 116);
+  right: 20%;
+  width: 20vw;
+  /* border: 4mm ridge rgba(207, 47, 116); */
   /* clip-path: circle(); */
 `;

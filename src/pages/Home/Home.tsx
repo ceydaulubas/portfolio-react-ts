@@ -19,10 +19,10 @@ const Home = () => {
         <StyledTitle>Hey!</StyledTitle>
         <StyledIntro>
           <p>
-            I'm <b>Ceyda Ulubas 👋 </b>
+            I'm <b>Ceyda Ulubas </b>
           </p>
           <br />
-          <p>Fullstack Developer who has willing to follow and learn new technologies and improve myself day by day.</p>
+          <p> self-motivated and enthusiastic software developer.</p>
         </StyledIntro>
         <StyledButtons>
           <Button color={'softPink'} link='' text={'Resume'} />
@@ -33,6 +33,14 @@ const Home = () => {
         src='https://res.cloudinary.com/dxqyvjf5r/image/upload/v1669031997/ceyda_portfolio/image/IMG_8262_umtytc.jpg'
         alt='Ceyda Ulubas business photo'
       /> */}
+      {/* <StyledImage
+        src='https://res.cloudinary.com/dxqyvjf5r/image/upload/v1669416486/ceyda_portfolio/image/MVIMG_20180506_144120_wwuyzc.jpg'
+        alt='Ceyda Ulubas business photo'
+      /> */}
+      <StyledImage
+        src='https://res.cloudinary.com/dxqyvjf5r/image/upload/v1669416480/ceyda_portfolio/image/IMG_0971_emshy7.jpg'
+        alt='Ceyda Ulubas business photo'
+      />
     </StyledHome>
   );
 };
