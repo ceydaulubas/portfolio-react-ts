@@ -7,8 +7,9 @@ const { mobileS, mobileM, tabletS, tablet, laptop, laptopL, desktop, desktopL } 
 
 export const StyledAbout = styled.div`
   display: flex;
-  justify-content: space-around;
-  padding-top: 30px;
+  /* justify-content: space-around; */
+  padding-left: 2%;
+  padding-right: 2%;
 `;
 
 export const StyledContent = styled.div`
@@ -26,7 +27,6 @@ export const StyledTexts = styled.div`
   background-color: ${({ theme }: StyledTheme) => theme.transparentLightGrey};
   padding: 1.5rem 3rem;
   width: 50vw;
-  /* position: absolute; */
   top: 14vw;
   right: 40vw;
   border-radius: 0.2rem;
@@ -62,4 +62,21 @@ export const StyledImageTwo = styled.img`
 
 export const StyledList = styled.li`
   background-color: ${({ theme }: StyledTheme) => theme.grey};
+`;
+
+export const StyledTechStack = styled.div`
+  /* background: red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 15px;
+`;
+
+export const StyleCircle = styled.div`
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+
+  background: white;
 `;

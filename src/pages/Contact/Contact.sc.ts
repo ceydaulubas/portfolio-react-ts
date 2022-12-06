@@ -10,13 +10,12 @@ export const StyledContactcontainer = styled.div`
 
 export const StyledContactTitle = styled.h1`
   color: ${({ theme }: StyledTheme) => theme.grey};
-  margin: 6rem 0 3rem 0;
 `;
 
 export const StyledContactForm = styled.form`
   display: flex;
   flex-direction: column;
-  /* align-items: flex-end; */
+  align-items: flex-end;
 `;
 
 export const StyledContactFormInput = styled.input`

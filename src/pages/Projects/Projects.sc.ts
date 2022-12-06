@@ -7,6 +7,8 @@ export const StyledProjects = styled.div`
   justify-content: space-between;
   margin-top: 3rem;
   /* margin: 3rem; */
+  padding-left: 2%;
+  padding-right: 2%;
 `;
 
 export const StyledTitle = styled.p`
@@ -17,4 +19,10 @@ export const StyledTitle = styled.p`
 export const StyledDescription = styled.p`
   color: ${({ theme }: StyledTheme) => theme.mediumRed};
   font-size: 1rem;
+`;
+
+export const Cardi = styled.div`
+  width: 30rem;
+  margin-bottom: 1rem;
+  background-color: white;
 `;

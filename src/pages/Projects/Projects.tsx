@@ -1,11 +1,12 @@
 import React from 'react';
-import { StyledProjects, StyledTitle, StyledDescription } from './Projects.sc';
+import { StyledProjects, StyledTitle, StyledDescription, Cardi } from './Projects.sc';
 import { projects } from '../../assets/copy/projects';
 
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Button from '../../assets/common/Button/Button';
+import { StyledTheme } from '../../assets/common/color';
 
 interface Project {
   id: string;
@@ -22,7 +23,7 @@ const Project = () => {
   return (
     <StyledProjects>
       {projects.map((item: Project) => (
-        <Card key={item.id} style={{ width: '30rem', marginBottom: '1rem' }}>
+        <Card key={item.id} style={{ width: '35rem', marginBottom: '1rem', backgroundColor: 'transparent', border: 'pink', borderStyle: 'dotted' }}>
           <Card.Img variant='top' src={item.photo} />
           <Card.Body>
             <StyledTitle>{item.title}</StyledTitle>

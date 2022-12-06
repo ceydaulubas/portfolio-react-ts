@@ -10,6 +10,8 @@ export const NavigationContainer = styled.nav`
   height: ${(props: { extendNavbar: boolean }) => (props.extendNavbar ? '100vh' : '80px')};
   display: flex;
   flex-direction: column;
+  padding-top: 40px;
+  margin-bottom: 100px;
   @media (min-width: 700px) {
     height: 80px;
   }
@@ -19,7 +21,7 @@ export const LeftContainer = styled.div`
   flex: 30%;
   display: flex;
   align-items: center;
-  padding-left: 5%;
+  padding-left: 2%;
 `;
 
 export const RightContainer = styled.div`
@@ -28,7 +30,7 @@ export const RightContainer = styled.div`
   justify-content: flex-end;
   /* margin-right: 100px; */
   /* margin-top: 20px; */
-  padding-right: 50px;
+  padding-right: 2%;
 `;
 
 export const NavInnerContainer = styled.div`
@@ -49,6 +51,13 @@ export const NavLink = styled(Link)`
   color: ${({ theme }: StyledTheme) => theme.words};
   @media (max-width: 700px) {
     display: none;
+  }
+  &:hover,
+  &:focus {
+    color: palevioletred;
+  }
+  &:active {
+    color: red;
   }
 `;
 

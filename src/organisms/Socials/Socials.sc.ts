@@ -6,7 +6,8 @@ export const StyledSocials = styled.footer`
   align-items: flex-end;
   justify-content: space-between;
   width: 15rem;
-  margin: 4rem 0 1rem 0;
+  padding: 4rem 2% 4rem 2%;
+  /* padding-bottom: 4rem; */
 `;
 
 export const NavLink = styled(Link)``;

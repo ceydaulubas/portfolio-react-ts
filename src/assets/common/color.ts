@@ -37,7 +37,7 @@ export interface StyledTheme {
 export const colorTheme: Theme = {
   light: {
     words: '#435bb5',
-    backgroundColor: '#d4e8f7',
+    backgroundColor: '#d8e2f6',
 
     softPink: '#f7c9c9',
     mediumRed: '#b92839ba',
@@ -47,7 +47,10 @@ export const colorTheme: Theme = {
     darkGrey: '#e2216a',
     transparentGrey: '#3f3f3fd8',
     transparentLightGrey: '#abababd8',
-    light: 'linear-gradient(90deg, #fadfdf5c, #f7c9c9 60%, #f8b4b4 90%, #fab27e 100%)',
+    // light: 'linear-gradient(90deg, #D99EC9, #F6F0C4 100%)',
+    // light: 'linear-gradient(90deg,  #F1A7F1 , #FAD0C4 100%)',
+    // light: 'linear-gradient(90deg, #DAACEC, #94C997 100%)',
+    light: 'linear-gradient(90deg,   #D5D0E5, #F3E6E8 100%)',
   },
   dark: {
     words: '#FFFFFF',
@@ -60,6 +63,7 @@ export const colorTheme: Theme = {
     darkGrey: '#C6C2C3',
     transparentGrey: '#3f3f3fd8',
     transparentLightGrey: '#abababd8',
-    light: 'linear-gradient(90deg, #fadfdf6d, #732A40 60%, #561F30 90%, #1C0A0F 100%)',
+    // light: 'linear-gradient(90deg, #fadfdf6d, #732A40 60%, #561F30 90%, #1C0A0F 100%)',
+    light: 'linear-gradient(90deg, #414141,  #000000 100%)',
   },
 };

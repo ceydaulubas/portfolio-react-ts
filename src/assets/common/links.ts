@@ -28,7 +28,7 @@ export const links = {
 };
 
 export const icons = {
-  react: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1669800920/ceyda_portfolio/image/icons/react-logo_eajidn.png',
+  react: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1670179353/ceyda_portfolio/image/icons/react_wxt0hz.png',
   nextjs: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1669651390/ceyda_portfolio/image/icons/414px-Nextjs-logo.svg_bjv1rb.png',
   node: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1669800919/ceyda_portfolio/image/icons/nodeJs-logo_gbmykl.png',
   express: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1669800919/ceyda_portfolio/image/icons/express-logo_vifblw.png',
@@ -37,6 +37,6 @@ export const icons = {
   gitlab: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1669800919/ceyda_portfolio/image/icons/5847f997cef1014c0b5e48c1_gqsa40.png',
   bitbucket: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1669800918/ceyda_portfolio/image/icons/Bitbucket_Logo_abnhuy.png',
   jira: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1669800919/ceyda_portfolio/image/icons/kisspng-jira-atlassian-confluence-agile-software-developme-5b0a1fce1bf489.6313301315273901581145_tpjkjm.png',
-  aws: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1669800919/ceyda_portfolio/image/icons/Amazon_Web_Services-Logo.wine_hsresh.png',
+  aws: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1670182881/ceyda_portfolio/image/icons/aws_eideov.png',
   pm2: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1669800920/ceyda_portfolio/image/icons/pm2-v4_kcwqco.png',
 };
