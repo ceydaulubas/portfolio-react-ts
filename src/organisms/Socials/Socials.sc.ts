@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { StyledTheme } from '../../assets/common/color';
 
 export const StyledSocials = styled.footer`
   display: flex;
@@ -7,7 +8,7 @@ export const StyledSocials = styled.footer`
   justify-content: space-between;
   width: 15rem;
   padding: 4rem 2% 4rem 2%;
-  /* padding-bottom: 4rem; */
+  color: ${({ theme }: StyledTheme) => theme.grey};
 `;
 
 export const NavLink = styled(Link)``;

@@ -10,10 +10,13 @@ import {
   Logo,
   OpenLinksButton,
   NavLinkExtended,
+  NavLinkA,
+  NavLinkExtendedA,
 } from './Navigation.sc';
-import { images } from '../../assets/common/links';
+import { images, links } from '../../assets/common/links';
 import ThemeToggle from '../../components/ThemeToggle/ThemeToggle';
 import { ThemeContext } from '../../App';
+const { resume } = links;
 
 const { logo } = images;
 
@@ -36,8 +39,10 @@ const Navigation = () => {
             <NavLink to='/'>Home</NavLink>
             <NavLink to='/about'>About</NavLink>
             <NavLink to='/projects'>Projects</NavLink>
-            {/* <NavLink to='/skills'>Skills</NavLink> */}
             <NavLink to='/contact'>Contact</NavLink>
+            <NavLinkA href={resume} target='_blank' rel='noreferrer'>
+              Resume
+            </NavLinkA>
             <NavLink to='/'>
               <ThemeToggle></ThemeToggle>
             </NavLink>
@@ -62,9 +67,12 @@ const Navigation = () => {
           <NavLinkExtended to='/projects' onClick={() => closeExtended()}>
             Projects
           </NavLinkExtended>
-          {/* <NavLinkExtended to='/skills' onClick={() => closeExtended()}>
-            Skills
-          </NavLinkExtended> */}
+          <NavLinkExtended to='/contact' onClick={() => closeExtended()}>
+            Contact
+          </NavLinkExtended>
+          <NavLinkExtendedA href={resume} target='_blank' rel='noreferrer' onClick={() => closeExtended()}>
+            Resume
+          </NavLinkExtendedA>
           <NavLinkExtended to='/'>
             <ThemeToggle></ThemeToggle>
           </NavLinkExtended>

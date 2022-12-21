@@ -1,46 +1,55 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 // import { images } from '../../assets/common/links';
 // const { pinkPhoto } = images;
 import Button from '../../assets/common/Button/Button';
 
-import { StyledHome, StyledTitle, StyledIntro, StyledButtons, StyledContent, StyledImage } from './Home.sc';
+import { StyledHome, StyledTitle, StyledIntro, StyledButtons, StyledContent, StyledImage, StyledButton } from './Home.sc';
 import { ThemeContext } from '../../App';
 import { CSSProperties } from 'react';
-// interface AppTheme {
-//   dark: CSSProperties;
-//   light: CSSProperties;
-// }
+import { links, images } from '../../assets/common/links';
+import Typewriter from 'typewriter-effect';
+const { resume } = links;
+const { businessPhoto, pinkPhoto, logo, boardPhoto, view } = images;
+
+const allImages: any = [
+  'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1668542625/ceyda_portfolio/image/ceyda_photo_mrw3cz.jpg',
+  'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1669650023/ceyda_portfolio/image/views_ei8g2z.jpg',
+  'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1669416486/ceyda_portfolio/image/IMG_0047_ykcwzi.jpg',
+];
 
 const Home = () => {
   const { theme } = useContext(ThemeContext);
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
+
   return (
     <StyledHome>
       <StyledContent>
-        <StyledTitle>Hi!</StyledTitle>
+        <StyledTitle>
+          {' '}
+          <Typewriter
+            options={{
+              strings: ['Hello', 'Hej', 'Hallo', 'Merhaba'],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+        </StyledTitle>
         <StyledIntro>
           <p>
-            I'm <b>Ceyda Ulubas </b>
+            I'm <b>Ceyda Ulubas... </b>
           </p>
-          <br />
-          <p> self-motivated and enthusiastic software developer.</p>
+
+          <p>
+            a self-motivated and enthusiastic software developer who changes her career, chasing her dream, and loves to learn and share what she has
+            learned.
+          </p>
         </StyledIntro>
-        <StyledButtons>
-          <Button color={'softPink'} link='' text={'Resume'} href='www.google.com' />
-          <Button color={'darkPink'} link='' text={'Contact'} />
-        </StyledButtons>
       </StyledContent>
-      {/* <StyledImage
-        src='https://res.cloudinary.com/dxqyvjf5r/image/upload/v1669031997/ceyda_portfolio/image/IMG_8262_umtytc.jpg'
-        alt='Ceyda Ulubas business photo'
-      /> */}
+      {/* <StyledImage src={allImages[currentIndex]} alt='Ceyda Ulubas business photo' /> */}
       <StyledImage
-        src='https://res.cloudinary.com/dxqyvjf5r/image/upload/v1670358101/ceyda_portfolio/image/IMG_8535_uakqr5.jpg'
-        alt='Ceyda Ulubas business photo'
-      />
-      {/* <StyledImage
         src='https://res.cloudinary.com/dxqyvjf5r/image/upload/v1669416480/ceyda_portfolio/image/IMG_0971_emshy7.jpg'
         alt='Ceyda Ulubas business photo'
-      /> */}
+      />
     </StyledHome>
   );
 };

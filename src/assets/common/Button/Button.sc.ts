@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
-import { colors } from '../color';
-
-const { softPink, mediumRed, darkPink, white, grey, darkGrey } = colors;
+import { StyledTheme } from '../color';
+import { devices } from '../../../statics/devices';
+const { mobileS, mobileM, tabletS, tablet, laptop, laptopL, desktop, desktopL } = devices;
 
 type StyledButtonProps = {
   color: 'softPink' | 'darkPink';
@@ -12,23 +12,24 @@ export const StyledButton = styled.a<StyledButtonProps>`
   padding: 0.4rem;
   transition: all 0.2s ease-in;
   border-radius: 0.4rem;
-  color: ${white};
+  color: ${({ theme }: StyledTheme) => theme.softPink};
   font-size: 0.9rem;
   font-weight: 500;
   letter-spacing: 0.08em;
   text-decoration: none;
   width: fit-content;
-  margin-right: 4rem;
+  margin-right: 2rem;
   border: none;
   ${({ color }) =>
     color === 'softPink' &&
     css`
-      color: ${white};
-      background: ${darkPink};
+      color: ${({ theme }: StyledTheme) => theme.white};
+
+      background: ${({ theme }: StyledTheme) => theme.darkPink};
 
       &:hover {
-        background: ${mediumRed};
-        color: ${white};
+        background: ${({ theme }: StyledTheme) => theme.mediumRed};
+        color: ${({ theme }: StyledTheme) => theme.white};
         transform: translateY(-3px);
         box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
       }
@@ -40,11 +41,11 @@ export const StyledButton = styled.a<StyledButtonProps>`
   ${({ color }) =>
     color === 'darkPink' &&
     css`
-      background-color: ${grey};
-      color: ${white};
+      background: ${({ theme }: StyledTheme) => theme.grey};
+      color: ${({ theme }: StyledTheme) => theme.white};
       &:hover {
-        color: ${white};
-        background-color: ${darkGrey};
+        color: ${({ theme }: StyledTheme) => theme.white};
+        background: ${({ theme }: StyledTheme) => theme.darkGrey};
         transform: translateY(-3px);
         box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
       }
@@ -54,10 +55,10 @@ export const StyledButton = styled.a<StyledButtonProps>`
       }
     `};
 
-  /* @media (max-width: 375px) {
+  @media (${tabletS}) {
     font-size: 0.9rem;
     font-weight: 500;
     width: fit-content;
     margin-right: 10px;
-  } */
+  }
 `;

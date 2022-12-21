@@ -4,8 +4,9 @@ import { StyledButton } from './Button.sc';
 export type ButtonProps = {
   color: 'softPink' | 'darkPink';
   text: string;
-  link: string;
+  link?: string;
   href?: string;
+  type?: string;
 };
 
 const Button: FC<ButtonProps> = ({ color, text, link }: ButtonProps): ReactElement => {

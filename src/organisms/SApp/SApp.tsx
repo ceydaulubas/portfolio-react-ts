@@ -6,6 +6,7 @@ import { StyledApp } from '../../App.sc';
 import { ThemeProvider } from 'styled-components';
 import { colorTheme } from '../../assets/common/color';
 import { ThemeContext } from '../../App';
+import PopUp from '../../assets/common/PopUp/PopUp';
 
 const SApp = () => {
   const { theme } = useContext(ThemeContext);
@@ -20,6 +21,7 @@ const SApp = () => {
             <Route path='/projects' element={<Projects />} />
             <Route path='/skills' element={<Skills />} />
             <Route path='/contact' element={<Contact />} />
+            <Route path='/popup' element={<PopUp />} />
           </Routes>
           <Socials />
         </BrowserRouter>

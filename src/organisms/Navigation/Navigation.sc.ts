@@ -7,7 +7,7 @@ const { mobileS, mobileM, tabletS, tablet, laptop, laptopL, desktop, desktopL } 
 
 export const NavigationContainer = styled.nav`
   width: 100%;
-  height: ${(props: { extendNavbar: boolean }) => (props.extendNavbar ? '100vh' : '80px')};
+  /* height: ${(props: { extendNavbar: boolean }) => (props.extendNavbar ? '100vh' : '80px')}; */
   display: flex;
   flex-direction: column;
   padding-top: 40px;
@@ -61,7 +61,33 @@ export const NavLink = styled(Link)`
   }
 `;
 
+export const NavLinkA = styled.a`
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif, sans-serif;
+  text-decoration: none;
+  margin: 10px;
+  color: ${({ theme }: StyledTheme) => theme.words};
+  @media (max-width: 700px) {
+    display: none;
+  }
+  &:hover,
+  &:focus {
+    color: palevioletred;
+  }
+  &:active {
+    color: red;
+  }
+`;
+
 export const NavLinkExtended = styled(Link)`
+  color: ${({ theme }: StyledTheme) => theme.words};
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif, sans-serif;
+  text-decoration: none;
+  margin: 10px;
+`;
+
+export const NavLinkExtendedA = styled.a`
   color: ${({ theme }: StyledTheme) => theme.words};
   font-size: x-large;
   font-family: Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif, sans-serif;
@@ -80,7 +106,7 @@ export const OpenLinksButton = styled.button`
   width: 70px;
   height: 50px;
   background: none;
-  /* color: #e2216a; */
+  color: #e2216a;
   font-size: 45px;
   cursor: pointer;
   border: none;
