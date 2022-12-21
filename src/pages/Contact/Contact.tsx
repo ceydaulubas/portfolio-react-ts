@@ -63,6 +63,7 @@ const Contact = () => {
         <StyledContactFormTextarea rows={10} cols={60} name='message' placeholder='Your message' />
         <StyledButton type='submit'>Send</StyledButton>
       </StyledContactForm>
+      /* isLoading==true ? "": "" */ /* isGetData==true ? "": "" */
     </StyledContactcontainer>
   );
 };

@@ -1,16 +1,18 @@
 import styled from 'styled-components';
-// import { colors } from './assets/common/color';
-// const { darkPink, softPink } = colors;
+import { devices } from './statics/devices';
 
-import { Colors, colorTheme, StyledTheme } from './assets/common/color';
+import { StyledTheme } from './assets/common/color';
 
 export const StyledApp = styled.div`
   margin: 0;
   padding: 0 100px;
   background-image: ${({ theme }: StyledTheme) => theme.light};
-  /* background-color: ${({ theme }: StyledTheme) => theme.backgroundColor}; */
   border: 3px solid palevioletred;
   /* height: 100vh; */
   min-height: 100vh;
   color: ${({ theme }: StyledTheme) => theme.darkGrey};
+
+  @media (${devices.tabletS}) {
+    padding: 0;
+  }
 `;

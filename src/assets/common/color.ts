@@ -1,15 +1,3 @@
-// export const colors = {
-//   softPink: '#f7c9c9',
-//   mediumRed: '#b92839ba',
-//   darkPink: '#e2216a',
-//   white: '#eee',
-//   grey: '#7e7d7d7c',
-//   darkGrey: '#3f3f3fc0',
-//   transparentGrey: '#3f3f3fd8',
-//   transparentLightGrey: '#abababd8',
-//   light: 'linear-gradient(90deg, #fadfdf5c, #f7c9c9 60%, #f8b4b4 90%, #fab27e 100%)',
-// };
-
 export interface Colors {
   words: string;
   backgroundColor: string;
@@ -51,7 +39,8 @@ export const colorTheme: Theme = {
     // light: 'linear-gradient(90deg, #D99EC9, #F6F0C4 100%)',
     // light: 'linear-gradient(90deg,  #F1A7F1 , #FAD0C4 100%)',
     // light: 'linear-gradient(90deg, #DAACEC, #94C997 100%)',
-    light: 'linear-gradient(90deg,   #D5D0E5, #F3E6E8 100%)',
+    // light: 'linear-gradient(90deg,   #D5D0E5, #F3E6E8 100%)',
+    light: 'linear-gradient(90deg, #fadfdf5c, #f7c9c9 60%, #f8b4b4 90%, #fab27e 100%)',
   },
   dark: {
     words: '#FFFFFF',
@@ -64,7 +53,6 @@ export const colorTheme: Theme = {
     darkGrey: '#C6C2C3',
     transparentGrey: '#3f3f3fd8',
     transparentLightGrey: '#abababd8',
-    // light: 'linear-gradient(90deg, #fadfdf6d, #732A40 60%, #561F30 90%, #1C0A0F 100%)',
     light: 'linear-gradient(90deg, #414141,  #000000 100%)',
   },
 };

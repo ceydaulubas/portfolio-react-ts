@@ -58,7 +58,5 @@ export const StyledButton = styled.a<StyledButtonProps>`
   @media (${tabletS}) {
     font-size: 0.9rem;
     font-weight: 500;
-    width: fit-content;
-    margin-right: 10px;
   }
 `;

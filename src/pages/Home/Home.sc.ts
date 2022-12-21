@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 
 import { devices } from '../../statics/devices';
-import { Colors, colorTheme, StyledTheme } from '../../assets/common/color';
+import { StyledTheme } from '../../assets/common/color';
 
 const { mobileS, mobileM, tabletS, tablet, laptop, laptopL, desktop, desktopL } = devices;
 
@@ -77,7 +77,7 @@ export const StyledTitle = styled.h1`
 `;
 export const StyledIntro = styled.div`
   p {
-    color: black;
+    color: ${({ theme }: StyledTheme) => theme.white};
     font-size: 1.5rem;
     font-weight: 200;
     margin: 0;

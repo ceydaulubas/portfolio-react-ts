@@ -5,7 +5,6 @@ import Button from '../../assets/common/Button/Button';
 
 import { StyledHome, StyledTitle, StyledIntro, StyledButtons, StyledContent, StyledImage, StyledButton } from './Home.sc';
 import { ThemeContext } from '../../App';
-import { CSSProperties } from 'react';
 import { links, images } from '../../assets/common/links';
 import Typewriter from 'typewriter-effect';
 const { resume } = links;

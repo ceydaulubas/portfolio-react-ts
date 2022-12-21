@@ -1,14 +1,21 @@
 import styled from 'styled-components';
-import { Colors, colorTheme, StyledTheme } from '../../assets/common/color';
+import { StyledTheme } from '../../assets/common/color';
+import { devices } from '../../statics/devices';
+
+const { mobileS, mobileM, tabletS, tablet, laptop, laptopL, desktop, desktopL } = devices;
 
 export const StyledProjects = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 3rem;
-  /* margin: 3rem; */
   padding-left: 2%;
   padding-right: 2%;
+
+  @media (${laptop}) {
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const StyledTitle = styled.p`
