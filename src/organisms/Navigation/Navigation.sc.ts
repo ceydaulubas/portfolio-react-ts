@@ -54,10 +54,10 @@ export const NavLink = styled(Link)`
   }
   &:hover,
   &:focus {
-    color: palevioletred;
+    color: ${({ theme }: StyledTheme) => theme.styledTitle};
   }
   &:active {
-    color: red;
+    color: ${({ theme }: StyledTheme) => theme.darkPurple};
   }
 `;
 

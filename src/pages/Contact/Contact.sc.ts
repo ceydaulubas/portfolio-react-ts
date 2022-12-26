@@ -1,46 +1,56 @@
 import styled from 'styled-components';
 import { Colors, colorTheme, StyledTheme } from '../../assets/common/color';
+import { devices } from '../../statics/devices';
+const { mobileS, mobileM, tabletS, tablet, laptop, laptopL, desktop, desktopL } = devices;
 
 export const StyledContactcontainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* border: 2px solid black; */
 `;
 
 export const StyledContactTitle = styled.h1`
-  color: ${({ theme }: StyledTheme) => theme.grey};
+  color: ${({ theme }: StyledTheme) => theme.styledTitle};
 `;
 
 export const StyledContactForm = styled.form`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  padding-top: 3rem;
 `;
 
 export const StyledContactFormInput = styled.input`
   margin: 0.2rem 0;
-  border: 2px dashed ${({ theme }: StyledTheme) => theme.darkPink};
+  border: 2px dotted ${({ theme }: StyledTheme) => theme.styledText};
   border-radius: 0.1rem;
   padding-left: 1rem;
   width: 30vw;
-  background-color: ${({ theme }: StyledTheme) => theme.transparentLightGrey};
-  color: ${({ theme }: StyledTheme) => theme.darkGrey};
+  background-color: transparent;
+  color: ${({ theme }: StyledTheme) => theme.styledText};
   &::placeholder {
-    color: ${({ theme }: StyledTheme) => theme.grey};
+    color: ${({ theme }: StyledTheme) => theme.styledText};
+  }
+
+  @media (${devices.tablet}) {
+    width: 60vw;
   }
 `;
 
 export const StyledContactFormTextarea = styled.textarea`
   margin: 1rem 0 1rem 0;
-  border: 2px dashed ${({ theme }: StyledTheme) => theme.darkPink};
+  border: 2px dotted ${({ theme }: StyledTheme) => theme.styledText};
   border-radius: 0.1rem;
   padding-left: 1rem;
   width: 30vw;
-  background-color: ${({ theme }: StyledTheme) => theme.transparentLightGrey};
-  color: ${({ theme }: StyledTheme) => theme.darkGrey};
+  background-color: transparent;
+  color: ${({ theme }: StyledTheme) => theme.styledText};
   &::placeholder {
-    color: ${({ theme }: StyledTheme) => theme.grey};
+    color: ${({ theme }: StyledTheme) => theme.styledText};
+  }
+
+  @media (${devices.tablet}) {
+    width: 60vw;
   }
 `;
 
@@ -48,23 +58,24 @@ export const StyledButton = styled.button`
   padding: 0.5rem 2.5rem;
   transition: all 0.2s ease-in;
   border-radius: 0.4rem;
-  color: ${({ theme }: StyledTheme) => theme.darkGrey};
   font-weight: 500;
   letter-spacing: 0.08em;
   width: fit-content;
   border: none;
-  color: ${({ theme }: StyledTheme) => theme.darkGrey};
-  background-color: ${({ theme }: StyledTheme) => theme.transparentLightGrey};
+  color: ${({ theme }: StyledTheme) => theme.styledTitle};
+  /* background-color: ${({ theme }: StyledTheme) => theme.transparentLightGrey}; */
+  background-color: #fff1fa;
   cursor: pointer;
 
   &:hover {
-    background-color: ${({ theme }: StyledTheme) => theme.darkPink};
-    color: ${({ theme }: StyledTheme) => theme.softPink};
+    background-color: ${({ theme }: StyledTheme) => theme.styledTitle};
+    color: ${({ theme }: StyledTheme) => theme.styledText};
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
   }
   &:active {
     transform: translateY(-2px);
+    background-color: ${({ theme }: StyledTheme) => theme.darkTitle};
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   }
 `;

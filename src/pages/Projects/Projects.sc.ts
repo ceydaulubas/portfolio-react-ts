@@ -19,17 +19,11 @@ export const StyledProjects = styled.div`
 `;
 
 export const StyledTitle = styled.p`
-  color: ${({ theme }: StyledTheme) => theme.grey};
+  color: ${({ theme }: StyledTheme) => theme.styledTitle};
   font-size: 1.2rem;
 `;
 
-export const StyledDescription = styled.p`
-  color: ${({ theme }: StyledTheme) => theme.mediumRed};
+export const StyledText = styled.p`
+  color: ${({ theme }: StyledTheme) => theme.styledText};
   font-size: 1rem;
-`;
-
-export const Cardi = styled.div`
-  width: 30rem;
-  margin-bottom: 1rem;
-  background-color: white;
 `;

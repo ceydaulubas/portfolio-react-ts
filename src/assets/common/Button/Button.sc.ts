@@ -4,7 +4,7 @@ import { devices } from '../../../statics/devices';
 const { mobileS, mobileM, tabletS, tablet, laptop, laptopL, desktop, desktopL } = devices;
 
 type StyledButtonProps = {
-  color: 'softPink' | 'darkPink';
+  color: 'softPink' | 'grey';
 };
 
 export const StyledButton = styled.a<StyledButtonProps>`
@@ -23,12 +23,12 @@ export const StyledButton = styled.a<StyledButtonProps>`
   ${({ color }) =>
     color === 'softPink' &&
     css`
-      color: ${({ theme }: StyledTheme) => theme.white};
+      color: ${({ theme }: StyledTheme) => theme.styledText};
 
-      background: ${({ theme }: StyledTheme) => theme.darkPink};
+      background: ${({ theme }: StyledTheme) => theme.styledTitle};
 
       &:hover {
-        background: ${({ theme }: StyledTheme) => theme.mediumRed};
+        background: ${({ theme }: StyledTheme) => theme.darkPurple};
         color: ${({ theme }: StyledTheme) => theme.white};
         transform: translateY(-3px);
         box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
@@ -39,19 +39,20 @@ export const StyledButton = styled.a<StyledButtonProps>`
       }
     `}
   ${({ color }) =>
-    color === 'darkPink' &&
+    color === 'grey' &&
     css`
-      background: ${({ theme }: StyledTheme) => theme.grey};
-      color: ${({ theme }: StyledTheme) => theme.white};
+      background: #fff1fa;
+      color: ${({ theme }: StyledTheme) => theme.styledTitle};
       &:hover {
-        color: ${({ theme }: StyledTheme) => theme.white};
-        background: ${({ theme }: StyledTheme) => theme.darkGrey};
+        color: ${({ theme }: StyledTheme) => theme.styledText};
+        background-color: ${({ theme }: StyledTheme) => theme.darkPurple};
         transform: translateY(-3px);
         box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
       }
       &:active {
         transform: translateY(-1px);
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        background-color: ${({ theme }: StyledTheme) => theme.darkTitle};
       }
     `};
 

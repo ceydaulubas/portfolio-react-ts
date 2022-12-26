@@ -9,45 +9,34 @@ import {
   StyledButton,
 } from './Contact.sc';
 import PopUp from '../../assets/common/PopUp/PopUp';
+
+import Spinner from '../../assets/common/Spinner/Spinner';
+
 import Modal from 'react-bootstrap/Modal';
+import Button from '../../assets/common/Button/Button';
 
 const Contact = () => {
-  const [show, setShow] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [isGetData, setIGetData] = useState(false);
+  const [isOpenPopUp, setIsOpenPopUp] = useState(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
   const form = React.useRef() as React.MutableRefObject<HTMLFormElement>;
 
   const sendEmail = (e: any) => {
     e.preventDefault();
-
+    setIsLoading(true);
     emailjs.sendForm('service_x7flxg3', 'template_wus7lel', form.current, 'LjWepx4SxjRaI-FqO').then(
       (result) => {
+        setIGetData(true);
         console.log('result.text', result.text);
-        alert('Mesage successfully sent!');
-        // return (
-        //   <div className='modal show' style={{ display: 'block', position: 'initial' }}>
-        //     <Modal.Dialog>
-        //       <Modal.Header closeButton>
-        //         <Modal.Title>Modal title</Modal.Title>
-        //       </Modal.Header>
-
-        //       <Modal.Body>
-        //         <p>Modal body text goes here.</p>
-        //       </Modal.Body>
-
-        //       <Modal.Footer>
-        //         <Button variant='secondary'>Close</Button>
-        //         <Button variant='primary'>Save changes</Button>
-        //       </Modal.Footer>
-        //     </Modal.Dialog>
-        //   </div>
-        // );
+        setIsLoading(false);
+        setIsOpenPopUp(true);
       },
 
       (error) => {
         alert('Failed to send the message, please try again');
         console.log('error.text', error.text);
+        setIsLoading(false);
       }
     );
     e.target.reset();
@@ -55,6 +44,35 @@ const Contact = () => {
 
   return (
     <StyledContactcontainer>
+      {isLoading ? <Spinner></Spinner> : ''}
+      {isGetData && isOpenPopUp ? (
+        <div className='modal show' style={{ display: 'block', position: 'initial' }}>
+          <Modal.Dialog>
+            <Modal.Header>
+              <Modal.Title>Your message has just send</Modal.Title>
+            </Modal.Header>
+            <Modal.Footer>
+              <Button color={'grey'} text={'Close'} onClick={() => setIsOpenPopUp(false)} />
+            </Modal.Footer>
+          </Modal.Dialog>
+        </div>
+      ) : (
+        ''
+      )}
+      {!isGetData && isOpenPopUp ? (
+        <div className='modal show' style={{ display: 'block', position: 'initial' }}>
+          <Modal.Dialog>
+            <Modal.Header>
+              <Modal.Title> Your message was not sent, try again</Modal.Title>
+            </Modal.Header>
+            <Modal.Footer>
+              <Button color={'grey'} text={'Close'} onClick={() => setIsOpenPopUp(false)} />
+            </Modal.Footer>
+          </Modal.Dialog>
+        </div>
+      ) : (
+        ''
+      )}
       <StyledContactTitle>Contact Me</StyledContactTitle>
       <StyledContactForm ref={form} onSubmit={sendEmail}>
         <StyledContactFormInput type='text' placeholder='Name' name='user_name' required />
@@ -63,7 +81,6 @@ const Contact = () => {
         <StyledContactFormTextarea rows={10} cols={60} name='message' placeholder='Your message' />
         <StyledButton type='submit'>Send</StyledButton>
       </StyledContactForm>
-      /* isLoading==true ? "": "" */ /* isGetData==true ? "": "" */
     </StyledContactcontainer>
   );
 };

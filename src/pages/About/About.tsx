@@ -23,7 +23,7 @@ const About = () => {
   return (
     <StyledAbout>
       <StyledContent>
-        <StyledTitle>About Me</StyledTitle>
+        <StyledTitle>About Me...</StyledTitle>
         <StyledTexts>
           <StyledText>
             I graduated from Yeditepe University International Business Administration and Trade in 2016. After 2.5 years of brand management

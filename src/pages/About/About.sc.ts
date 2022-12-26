@@ -20,44 +20,44 @@ export const StyledContent = styled.div`
 `;
 
 export const StyledTitle = styled.h1`
-  color: ${({ theme }: StyledTheme) => theme.darkGrey};
+  color: ${({ theme }: StyledTheme) => theme.styledTitle};
 `;
 
 export const StyledTexts = styled.div`
-  background-color: ${({ theme }: StyledTheme) => theme.transparentLightGrey};
-  padding: 1.5rem 3rem;
+  /* background-color: ${({ theme }: StyledTheme) => theme.transparentLightGrey}; */
+  padding-top: 3rem;
   width: 50vw;
-  top: 14vw;
-  right: 40vw;
-  border-radius: 0.2rem;
 `;
 
 export const StyledText = styled.p`
-  color: ${({ theme }: StyledTheme) => theme.grey};
-  text-align: justify;
-`;
-
-export const StyledListTech = styled.ul`
-  color: ${({ theme }: StyledTheme) => theme.grey};
+  color: ${({ theme }: StyledTheme) => theme.styledText};
   text-align: justify;
 `;
 
 export const StyledImageOne = styled.img`
   width: 25vw;
   border-radius: 0.2rem;
-  border: 2px solid ${({ theme }: StyledTheme) => theme.grey};
+  border: 2px dotted ${({ theme }: StyledTheme) => theme.styledText};
   position: absolute;
   right: 10vw;
   top: 14vw;
+  :hover {
+    border-width: 5px;
+    color: ${({ theme }: StyledTheme) => theme.styledTitle};
+  }
 `;
 
 export const StyledImageTwo = styled.img`
   width: 25vw;
   border-radius: 0.2rem;
-  border: 2px solid ${({ theme }: StyledTheme) => theme.grey};
+  border: 2px dotted ${({ theme }: StyledTheme) => theme.styledText};
   position: absolute;
   right: 5vw;
   top: 32vw;
+  :hover {
+    border-width: 5px;
+    color: ${({ theme }: StyledTheme) => theme.styledTitle};
+  }
 `;
 
 export const StyledList = styled.li`

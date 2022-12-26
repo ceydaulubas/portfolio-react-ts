@@ -3,7 +3,9 @@ export const images = {
   pinkPhoto:
     'https://res.cloudinary.com/dxqyvjf5r/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1669026319/ceyda_portfolio/image/ceyda_pink_njvbwl.heic',
   // logo: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1668542299/ceyda_portfolio/image/CEYDALOGO_phamae.png',
-  logo: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1668858012/ceyda_portfolio/image/c_2_nbrfaz.png',
+
+  logoDark: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1672059768/ceyda_portfolio/image/blackLogo_n39jnw.png',
+  logoLight: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1668858012/ceyda_portfolio/image/c_2_nbrfaz.png',
   boardPhoto: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1669416486/ceyda_portfolio/image/IMG_0047_ykcwzi.jpg',
   view: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1669650023/ceyda_portfolio/image/views_ei8g2z.jpg',
 };
@@ -35,7 +37,7 @@ export const icons = {
   mongodb: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1669800920/ceyda_portfolio/image/icons/mongoDB2-logo_llgltd.png',
   github: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1669800919/ceyda_portfolio/image/icons/github-logo_rdu0uv.png',
   gitlab: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1669800919/ceyda_portfolio/image/icons/5847f997cef1014c0b5e48c1_gqsa40.png',
-  bitbucket: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1669800918/ceyda_portfolio/image/icons/Bitbucket_Logo_abnhuy.png',
+  bitbucket: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1670182204/ceyda_portfolio/image/icons/bitbucket_se81dq.png',
   jira: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1669800919/ceyda_portfolio/image/icons/kisspng-jira-atlassian-confluence-agile-software-developme-5b0a1fce1bf489.6313301315273901581145_tpjkjm.png',
   aws: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1670182881/ceyda_portfolio/image/icons/aws_eideov.png',
   pm2: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1669800920/ceyda_portfolio/image/icons/pm2-v4_kcwqco.png',

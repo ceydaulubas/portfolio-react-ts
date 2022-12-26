@@ -18,7 +18,7 @@ import ThemeToggle from '../../components/ThemeToggle/ThemeToggle';
 import { ThemeContext } from '../../App';
 const { resume } = links;
 
-const { logo } = images;
+const { logoDark, logoLight } = images;
 
 const Navigation = () => {
   const [extendNavbar, setExtendNavbar] = useState(false);
@@ -32,7 +32,7 @@ const Navigation = () => {
     <NavigationContainer extendNavbar={extendNavbar}>
       <NavInnerContainer>
         <LeftContainer>
-          <Logo src={logo} alt='Ceyda Ulubas logo'></Logo>
+          {theme == 'dark' ? <Logo src={logoDark} alt='Ceyda Ulubas logo'></Logo> : <Logo src={logoLight} alt='Ceyda Ulubas logo'></Logo>}
         </LeftContainer>{' '}
         <RightContainer>
           <NavLinkContainer>

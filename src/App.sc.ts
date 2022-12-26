@@ -7,8 +7,7 @@ export const StyledApp = styled.div`
   margin: 0;
   padding: 0 100px;
   background-image: ${({ theme }: StyledTheme) => theme.light};
-  border: 3px solid palevioletred;
-  /* height: 100vh; */
+  /* border: 3px solid palevioletred; */
   min-height: 100vh;
   color: ${({ theme }: StyledTheme) => theme.darkGrey};
 
