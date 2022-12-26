@@ -24,7 +24,6 @@ export const StyledTitle = styled.h1`
 `;
 
 export const StyledTexts = styled.div`
-  /* background-color: ${({ theme }: StyledTheme) => theme.transparentLightGrey}; */
   padding-top: 3rem;
   width: 50vw;
 `;
@@ -58,10 +57,6 @@ export const StyledImageTwo = styled.img`
     border-width: 5px;
     color: ${({ theme }: StyledTheme) => theme.styledTitle};
   }
-`;
-
-export const StyledList = styled.li`
-  background-color: ${({ theme }: StyledTheme) => theme.grey};
 `;
 
 export const StyledTechStack = styled.div`

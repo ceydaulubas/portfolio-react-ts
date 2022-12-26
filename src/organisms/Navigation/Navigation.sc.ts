@@ -48,13 +48,13 @@ export const NavLink = styled(Link)`
   font-family: Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif, sans-serif;
   text-decoration: none;
   margin: 10px;
-  color: ${({ theme }: StyledTheme) => theme.words};
+  color: ${({ theme }: StyledTheme) => theme.styledText};
   @media (max-width: 700px) {
     display: none;
   }
   &:hover,
   &:focus {
-    color: ${({ theme }: StyledTheme) => theme.styledTitle};
+    color: palevioletred;
   }
   &:active {
     color: ${({ theme }: StyledTheme) => theme.darkPurple};
@@ -66,7 +66,7 @@ export const NavLinkA = styled.a`
   font-family: Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif, sans-serif;
   text-decoration: none;
   margin: 10px;
-  color: ${({ theme }: StyledTheme) => theme.words};
+  color: ${({ theme }: StyledTheme) => theme.styledText};
   @media (max-width: 700px) {
     display: none;
   }
@@ -75,12 +75,12 @@ export const NavLinkA = styled.a`
     color: palevioletred;
   }
   &:active {
-    color: red;
+    color: ${({ theme }: StyledTheme) => theme.darkPurple};
   }
 `;
 
 export const NavLinkExtended = styled(Link)`
-  color: ${({ theme }: StyledTheme) => theme.words};
+  color: ${({ theme }: StyledTheme) => theme.styledText};
   font-size: x-large;
   font-family: Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif, sans-serif;
   text-decoration: none;
@@ -88,7 +88,7 @@ export const NavLinkExtended = styled(Link)`
 `;
 
 export const NavLinkExtendedA = styled.a`
-  color: ${({ theme }: StyledTheme) => theme.words};
+  color: ${({ theme }: StyledTheme) => theme.styledText};
   font-size: x-large;
   font-family: Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif, sans-serif;
   text-decoration: none;
@@ -96,17 +96,15 @@ export const NavLinkExtendedA = styled.a`
 `;
 
 export const Logo = styled.img`
-  /* margin: 10px; */
   max-width: 60px;
   height: auto;
-  /* margin-top: 30px; */
 `;
 
 export const OpenLinksButton = styled.button`
   width: 70px;
   height: 50px;
   background: none;
-  color: #e2216a;
+  color: ${({ theme }: StyledTheme) => theme.styledText};
   font-size: 45px;
   cursor: pointer;
   border: none;

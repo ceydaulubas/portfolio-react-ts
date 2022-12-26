@@ -1,7 +1,17 @@
 import { links, images, projectImage } from '../../assets/common/links';
-const { petAdopt, codeChat, halloweenShake, gipgy, weatherApi, easyInsurance, todoList } = projectImage;
+const { blackJack, petAdopt, Tmbd, codeChat, halloweenShake, gipgy, weatherApi, easyInsurance, todoList } = projectImage;
 
 export const projects = [
+  {
+    id: '0',
+    photo: blackJack,
+    title: 'Black Jack',
+    year: '2020',
+    description: 'Blackjack is a casino banking game.',
+    stack: 'Pure Javascript',
+    github: 'https://github.com/ceydaulubas/blackjack-game',
+    website: 'https://blackjack-purejs.netlify.app/index.html',
+  },
   {
     id: '1',
     photo: petAdopt,
@@ -33,6 +43,15 @@ export const projects = [
   },
   {
     id: '4',
+    photo: Tmbd,
+    title: 'TMBD Page',
+    year: '2021',
+    description: 'TMDB is a web page',
+    stack: ' React Js, TMBD Api, Axios, SCSS, Material UI and bootstrap',
+    github: 'https://github.com/ceydaulubas/TMDb-react-api',
+  },
+  {
+    id: '5',
     photo: todoList,
     title: 'ToDoList',
     year: '2021',
@@ -41,7 +60,7 @@ export const projects = [
     github: 'https://github.com/ceydaulubas/ToDoList-Angular-CLI-FakeBackEnd',
   },
   {
-    id: '5',
+    id: '6',
     photo: easyInsurance,
     title: 'Easy Insurance',
     year: '2021',
@@ -52,7 +71,7 @@ export const projects = [
     website: 'https://easy-insurance.netlify.app/',
   },
   {
-    id: '6',
+    id: '7',
     photo: halloweenShake,
     title: 'Halloween Snake',
     year: '2020',
@@ -62,7 +81,7 @@ export const projects = [
     website: 'https://codebrokerad.github.io/halloweenSnake/',
   },
   {
-    id: '7',
+    id: '8',
     photo: gipgy,
     title: 'Giphy Api',
     year: '2021',

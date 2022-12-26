@@ -24,8 +24,14 @@ const Project = () => {
         <Card key={item.id} style={{ width: '35rem', marginBottom: '1rem', backgroundColor: 'transparent', border: 'white', borderStyle: 'dotted' }}>
           <Card.Img variant='top' src={item.photo} />
           <Card.Body>
-            <StyledTitle>{item.title}</StyledTitle>
+            <StyledTitle>
+              <b>{item.title}</b>
+            </StyledTitle>
             <StyledText>{item.description}</StyledText>
+            <StyledText>
+              <b>Tech stacks: </b>
+              {item.stack}
+            </StyledText>
             {/* <Card.Text>Made in {item.year}</Card.Text> */}
           </Card.Body>
           <Card.Body>

@@ -9,7 +9,7 @@ export const StyledApp = styled.div`
   background-image: ${({ theme }: StyledTheme) => theme.light};
   /* border: 3px solid palevioletred; */
   min-height: 100vh;
-  color: ${({ theme }: StyledTheme) => theme.darkGrey};
+  color: ${({ theme }: StyledTheme) => theme.styledText};
 
   @media (${devices.tabletS}) {
     padding: 0;

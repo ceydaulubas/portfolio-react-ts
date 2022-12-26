@@ -19,7 +19,7 @@ export const StyledProjects = styled.div`
 `;
 
 export const StyledTitle = styled.p`
-  color: ${({ theme }: StyledTheme) => theme.styledTitle};
+  color: ${({ theme }: StyledTheme) => theme.ProjectTitle};
   font-size: 1.2rem;
 `;
 

@@ -2,14 +2,15 @@ export const images = {
   businessPhoto: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1668542625/ceyda_portfolio/image/ceyda_photo_mrw3cz.jpg',
   pinkPhoto:
     'https://res.cloudinary.com/dxqyvjf5r/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1669026319/ceyda_portfolio/image/ceyda_pink_njvbwl.heic',
-  // logo: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1668542299/ceyda_portfolio/image/CEYDALOGO_phamae.png',
-
   logoDark: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1672059768/ceyda_portfolio/image/blackLogo_n39jnw.png',
-  logoLight: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1668858012/ceyda_portfolio/image/c_2_nbrfaz.png',
+  logoLight: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1672068111/ceyda_portfolio/image/c_5_i4sqq5.png',
   boardPhoto: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1669416486/ceyda_portfolio/image/IMG_0047_ykcwzi.jpg',
   view: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1669650023/ceyda_portfolio/image/views_ei8g2z.jpg',
 };
 export const projectImage = {
+  blackJack:
+    'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1672088946/ceyda_portfolio/image/web_project_screen/Screenshot_2022-12-26_at_22.08.32_yxa8ql.png',
+  Tmbd: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1672089507/ceyda_portfolio/image/web_project_screen/tmdb-main-page_qsa4a2.png',
   petAdopt: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1668545004/ceyda_portfolio/image/web_project_screen/petadopt1_n7prfd.png',
   codeChat: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1668545006/ceyda_portfolio/image/web_project_screen/codeChat-screenhot_xhvhv1.png',
   halloweenShake:

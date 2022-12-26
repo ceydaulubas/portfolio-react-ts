@@ -10,7 +10,7 @@ export const StyledContactcontainer = styled.div`
 `;
 
 export const StyledContactTitle = styled.h1`
-  color: ${({ theme }: StyledTheme) => theme.styledTitle};
+  color: ${({ theme }: StyledTheme) => theme.contactTitle};
 `;
 
 export const StyledContactForm = styled.form`
@@ -63,8 +63,7 @@ export const StyledButton = styled.button`
   width: fit-content;
   border: none;
   color: ${({ theme }: StyledTheme) => theme.styledTitle};
-  /* background-color: ${({ theme }: StyledTheme) => theme.transparentLightGrey}; */
-  background-color: #fff1fa;
+  background-color: ${({ theme }: StyledTheme) => theme.contactButtonBackground};
   cursor: pointer;
 
   &:hover {
