@@ -11,7 +11,7 @@ export const StyledApp = styled.div`
   min-height: 100vh;
   color: ${({ theme }: StyledTheme) => theme.styledText};
 
-  @media (${devices.tabletS}) {
+  @media (${devices.tablet}) {
     padding: 0;
   }
 `;
