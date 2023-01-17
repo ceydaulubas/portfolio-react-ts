@@ -26,7 +26,7 @@ export const StyledContactFormInput = styled.input`
   border-radius: 0.1rem;
   padding-left: 1rem;
   width: 30vw;
-  background-color: transparent;
+  background-color: red;
   color: ${({ theme }: StyledTheme) => theme.styledText};
   &::placeholder {
     color: ${({ theme }: StyledTheme) => theme.styledText};
