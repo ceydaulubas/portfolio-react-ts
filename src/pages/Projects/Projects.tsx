@@ -6,6 +6,7 @@ import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Button from '../../assets/common/Button/Button';
+import { Link } from 'react-router-dom';
 interface Project {
   id: string;
   photo: string;
@@ -22,7 +23,7 @@ const Project = () => {
     <StyledProjects>
       {projects.map((item: Project) => (
         <Card key={item.id} style={{ width: '35rem', marginBottom: '1rem', backgroundColor: 'transparent', border: 'white', borderStyle: 'dotted' }}>
-          <Card.Img variant='top' src={item.photo} />
+          <Card.Img variant='top' src={item.photo} onClick={() => {}}></Card.Img>
           <Card.Body>
             <StyledTitle>
               <b>{item.title}</b>

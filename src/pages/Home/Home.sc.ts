@@ -60,6 +60,11 @@ export const StyledContent = styled.div`
   flex-direction: column;
   width: 50%;
   padding: 2vw;
+
+  /*Tablet size for width*/
+  @media (${devices.tablet}) {
+    width: 80%;
+  }
 `;
 export const StyledTitle = styled.h1`
   color: ${({ theme }: StyledTheme) => theme.styledTitle};
