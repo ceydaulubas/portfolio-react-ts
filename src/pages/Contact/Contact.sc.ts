@@ -26,14 +26,14 @@ export const StyledContactFormInput = styled.input`
   border-radius: 0.1rem;
   padding-left: 1rem;
   width: 30vw;
-  background-color: red;
+  background-color: transparent;
   color: ${({ theme }: StyledTheme) => theme.styledText};
   &::placeholder {
     color: ${({ theme }: StyledTheme) => theme.styledText};
   }
 
   @media (${tablet}) {
-    width: 60vw;
+    width: 100vw;
   }
 `;
 
@@ -50,7 +50,7 @@ export const StyledContactFormTextarea = styled.textarea`
   }
 
   @media (${tablet}) {
-    width: 60vw;
+    width: 100vw;
   }
 `;
 
