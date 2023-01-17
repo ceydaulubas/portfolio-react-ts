@@ -32,7 +32,7 @@ export const StyledContactFormInput = styled.input`
     color: ${({ theme }: StyledTheme) => theme.styledText};
   }
 
-  @media (min-width: 700px) {
+  @media (max-width: 700px) {
     width: 60vw;
     margin: 0;
   }
@@ -50,7 +50,7 @@ export const StyledContactFormTextarea = styled.textarea`
     color: ${({ theme }: StyledTheme) => theme.styledText};
   }
 
-  @media (min-width: 700px) {
+  @media (max-width: 700px) {
     width: 60vw;
     margin: 0;
   }
