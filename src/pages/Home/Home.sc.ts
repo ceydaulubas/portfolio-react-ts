@@ -63,7 +63,7 @@ export const StyledContent = styled.div`
 
   /*Tablet size for width*/
   @media (${devices.tablet}) {
-    width: 80%;
+    width: 100%;
   }
 `;
 export const StyledTitle = styled.h1`
