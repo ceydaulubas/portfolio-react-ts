@@ -34,6 +34,7 @@ export const StyledContactFormInput = styled.input`
 
   @media (min-width: 700px) {
     width: 60vw;
+    margin: 0;
   }
 `;
 
@@ -51,6 +52,7 @@ export const StyledContactFormTextarea = styled.textarea`
 
   @media (min-width: 700px) {
     width: 60vw;
+    margin: 0;
   }
 `;
 
