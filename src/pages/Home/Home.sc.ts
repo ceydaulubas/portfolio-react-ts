@@ -62,7 +62,7 @@ export const StyledContent = styled.div`
   padding: 2vw;
 
   /*Tablet size for width*/
-  @media (${devices.tablet}) {
+  @media (${tablet}) {
     width: 100%;
   }
 `;
