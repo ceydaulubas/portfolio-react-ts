@@ -32,8 +32,8 @@ export const StyledContactFormInput = styled.input`
     color: ${({ theme }: StyledTheme) => theme.styledText};
   }
 
-  @media (${tablet}) {
-    width: 100vw;
+  @media (min-width: 700px) {
+    width: 60vw;
   }
 `;
 
@@ -49,8 +49,8 @@ export const StyledContactFormTextarea = styled.textarea`
     color: ${({ theme }: StyledTheme) => theme.styledText};
   }
 
-  @media (${tablet}) {
-    width: 100vw;
+  @media (min-width: 700px) {
+    width: 60vw;
   }
 `;
 
