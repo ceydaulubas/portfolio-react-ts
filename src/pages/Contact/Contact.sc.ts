@@ -35,7 +35,6 @@ export const StyledContactFormInput = styled.input`
   @media (max-width: 700px) {
     width: 60vw;
     margin: 0;
-    background-color: red;
   }
 `;
 
