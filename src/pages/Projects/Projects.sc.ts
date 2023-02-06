@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { StyledTheme } from '../../assets/common/color';
 import { devices } from '../../statics/devices';
 
-const { mobileS, mobileM, tabletS, tablet, laptop, laptopL, desktop, desktopL } = devices;
+const { laptop} = devices;
 
 export const StyledProjects = styled.div`
   display: flex;

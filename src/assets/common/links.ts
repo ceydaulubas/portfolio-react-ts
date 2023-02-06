@@ -23,7 +23,7 @@ export const projectImage = {
     'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1668544997/ceyda_portfolio/image/web_project_screen/todolist-angular-pagepic_bbmeze.png',
 };
 export const links = {
-  resume: 'https://www.canva.com/design/DAFASE5EaiQ/fxJd3avRuiZ9ZSgMGkquOg/view',
+  resume: 'https://www.canva.com/design/DAFZcinXSlU/VKlj6bvWtxqE-eecqXBCCA/view?utm_content=DAFZcinXSlU&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink',
   email: 'mailto:ceyda.ulubas@hotmail.com',
   github: 'https://github.com/ceydaulubas',
   linkedin: 'https://www.linkedin.com/in/ceydaulubas/',

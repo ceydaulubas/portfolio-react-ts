@@ -32,15 +32,15 @@ const Navigation = () => {
     <NavigationContainer extendNavbar={extendNavbar}>
       <NavInnerContainer>
         <LeftContainer>
-          {theme == 'dark' ? <Logo src={logoDark} alt='Ceyda Ulubas logo'></Logo> : <Logo src={logoLight} alt='Ceyda Ulubas logo'></Logo>}
+          {theme === 'dark' ? <Logo src={logoDark} alt='Ceyda Ulubas logo'></Logo> : <Logo src={logoLight} alt='Ceyda Ulubas logo'></Logo>}
         </LeftContainer>{' '}
         <RightContainer>
           <NavLinkContainer>
-            <NavLink to='/'>Home</NavLink>
+            <NavLink to='/'>Home</NavLink> 
             <NavLink to='/about'>About</NavLink>
             <NavLink to='/projects'>Projects</NavLink>
             <NavLink to='/contact'>Contact</NavLink>
-            <NavLinkA href={resume} target='_blank' rel='noreferrer'>
+            <NavLinkA href={resume} download="MyExampleDoc" target='_blank' rel='noreferrer'>
               Resume
             </NavLinkA>
             <NavLink to='/'>

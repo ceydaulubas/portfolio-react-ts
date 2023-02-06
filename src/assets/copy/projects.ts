@@ -1,4 +1,4 @@
-import { links, images, projectImage } from '../../assets/common/links';
+import { projectImage } from '../../assets/common/links';
 const { blackJack, petAdopt, Tmbd, codeChat, halloweenShake, gipgy, weatherApi, easyInsurance, todoList } = projectImage;
 
 export const projects = [
@@ -19,8 +19,7 @@ export const projects = [
     year: '2020',
     description: '  This website provides easy access and adoption to cats and dogs waiting for adoption.',
     stack: 'MongoDB, Mongoose, Express.js, React, Node.js',
-    github: 'https://github.com/ceydaulubas/petAdopt"',
-    website: 'https://pet-adopt-ironhack.herokuapp.com/',
+    github: 'https://github.com/ceydaulubas/petAdopt',
   },
   {
     id: '2',
@@ -29,8 +28,7 @@ export const projects = [
     year: '2020',
     description: ' Social network platform for people who want to connect with other coders. - Group project in Ironhack.',
     stack: 'Node.js , Express.js, SCSS, MongoDB, Mongoose, Handlebars',
-    github: 'https://github.com/eliachiarucci/codechat.git',
-    website: 'http://codechat-ironhack.herokuapp.com',
+    github: 'https://github.com/eliachiarucci/codechat.git'
   },
   {
     id: '3',

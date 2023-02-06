@@ -32,44 +32,44 @@ const About = () => {
           </StyledText>
           <StyledText>
             After completing my Bootcamp, I started my first job in the tech world as a Jr. software engineer at Adcolony (acquired by Digital
-            Turbine) in June 2021. And I am currently developing mobile advertisement game projects using vanilla Javascript or Typescript based on
-            React. In addition to daily tasks, I generally use MERN stack in projects where I create full stack micro sites.
+            Turbine) in June 2021. I developed mobile advertisement game projects using vanilla Javascript or Typescript based on React for about 1.5 years.
+            And I am currently developing my technical skills by producing and researching projects.
           </StyledText>
           <StyledText>
-            Technologies I use in my work:
+            Technologies I used in my work:
             <StyledTechStack>
               <StyleCircle>
-                <img src={react} style={{ width: '30px' }}></img>
+                <img src={react}  alt="react" style={{ width: '30px' }}></img>
               </StyleCircle>
               <StyleCircle>
-                <img src={nextjs} style={{ width: '35px' }}></img>
+                <img src={nextjs} alt="nextjs" style={{ width: '35px' }}></img>
               </StyleCircle>
               <StyleCircle>
-                <img src={node} style={{ width: '32px' }}></img>
+                <img src={node} alt="node" style={{ width: '32px' }}></img>
               </StyleCircle>
               <StyleCircle>
-                <img src={express} style={{ width: '32px' }}></img>
+                <img src={express} alt="express" style={{ width: '32px' }}></img>
               </StyleCircle>
               <StyleCircle>
-                <img src={mongodb} style={{ width: '30px' }}></img>
+                <img src={mongodb} alt="mongodb" style={{ width: '30px' }}></img>
               </StyleCircle>
               <StyleCircle>
-                <img src={github} style={{ width: '30px' }}></img>
+                <img src={github} alt="github" style={{ width: '30px' }}></img>
               </StyleCircle>
               <StyleCircle>
-                <img src={gitlab} style={{ width: '30px' }}></img>
+                <img src={gitlab} alt="gitlab" style={{ width: '30px' }}></img>
               </StyleCircle>
               <StyleCircle>
-                <img src={bitbucket} style={{ width: '30px' }}></img>
+                <img src={bitbucket} alt="bitbucket" style={{ width: '30px' }}></img>
               </StyleCircle>
               <StyleCircle>
-                <img src={jira} style={{ width: '30px' }}></img>
+                <img src={jira} alt="jira" style={{ width: '30px' }}></img>
               </StyleCircle>
               <StyleCircle>
-                <img src={aws} style={{ width: '30px' }}></img>
+                <img src={aws} alt="aws" style={{ width: '30px' }}></img>
               </StyleCircle>
               <StyleCircle>
-                <img src={pm2} style={{ width: '35px' }}></img>
+                <img src={pm2} alt="pm2" style={{ width: '35px' }}></img>
               </StyleCircle>
             </StyledTechStack>
           </StyledText>
@@ -79,8 +79,10 @@ const About = () => {
             doing pilates, exploring new places, taking pictures in nature or snowboarding in the winter.
           </StyledText>
         </StyledTexts>
+        <a href="https://www.instagram.com/ulubas.c/">
         <StyledImageOne src={view} alt='view ' />
         <StyledImageTwo src={boardPhoto} alt='snowboarding ' />
+         </a>
       </StyledContent>
     </StyledAbout>
   );
