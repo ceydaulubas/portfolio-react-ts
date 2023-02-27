@@ -10,6 +10,11 @@ export const StyledAbout = styled.div`
   /* justify-content: space-around; */
   padding-left: 2%;
   padding-right: 2%;
+  @media (max-width: 700px) {
+    padding-left: 10%;
+
+
+  }
 `;
 
 export const StyledContent = styled.div`
@@ -26,6 +31,10 @@ export const StyledTitle = styled.h1`
 export const StyledTexts = styled.div`
   padding-top: 3rem;
   width: 50vw;
+  @media (max-width: 700px) {
+    width: 100%;
+
+  }
 `;
 
 export const StyledText = styled.p`
@@ -44,6 +53,9 @@ export const StyledImageOne = styled.img`
     border-width: 5px;
     color: ${({ theme }: StyledTheme) => theme.styledTitle};
   }
+  @media (max-width: 700px) {
+    display: none;
+  }
 `;
 
 export const StyledImageTwo = styled.img`
@@ -56,6 +68,9 @@ export const StyledImageTwo = styled.img`
   :hover {
     border-width: 5px;
     color: ${({ theme }: StyledTheme) => theme.styledTitle};
+  }
+  @media (max-width: 700px) {
+    display: none;
   }
 `;
 
