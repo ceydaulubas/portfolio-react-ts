@@ -40,7 +40,7 @@ const About = () => {
           <StyledText>
             I was born in Kayseri, Turkey in 1993, I moved to Istanbul in 2016
             after enrolling in the International Trade and Business program at
-            Yeditepe University. During my time at university, I completed
+            Yeditepe University. During my university years, I completed
             internships at several companies, including Shell, Havas, Anadolu
             Bilişim, and DEİK, which provided me with invaluable experience and
             insights into the workings of various businesses.
