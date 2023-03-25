@@ -7,6 +7,7 @@ export interface Colors {
   contactTitle: string;
   contactButtonBackground: string;
   ProjectTitle: string;
+  howerBackgroundColor: string
 
   softPink: string;
   white: string;
@@ -33,7 +34,7 @@ export const colorTheme: Theme = {
     contactTitle: '#000000',
     contactButtonBackground: '#db7093',
     ProjectTitle: 'white',
-
+    howerBackgroundColor: 'palevioletred',
     softPink: '#f7c9c9',
 
     grey: '#7e7d7d7c',
@@ -48,6 +49,7 @@ export const colorTheme: Theme = {
     contactTitle: 'palevioletred',
     contactButtonBackground: '#fff1fa',
     ProjectTitle: '#db7093',
+    howerBackgroundColor: '#3d1631',
 
     softPink: '#f7c9c9',
 

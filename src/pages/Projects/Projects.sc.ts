@@ -2,12 +2,12 @@ import styled from 'styled-components';
 import { StyledTheme } from '../../assets/common/color';
 import { devices } from '../../statics/devices';
 
-const { laptop} = devices;
+const { laptop } = devices;
 
 export const StyledProjects = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: 3rem;
   padding-left: 2%;
   padding-right: 2%;

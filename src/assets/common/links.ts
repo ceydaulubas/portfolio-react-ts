@@ -1,3 +1,4 @@
+
 export const images = {
   businessPhoto: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1668542625/ceyda_portfolio/image/ceyda_photo_mrw3cz.jpg',
   pinkPhoto:
@@ -42,4 +43,11 @@ export const icons = {
   jira: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1669800919/ceyda_portfolio/image/icons/kisspng-jira-atlassian-confluence-agile-software-developme-5b0a1fce1bf489.6313301315273901581145_tpjkjm.png',
   aws: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1670182881/ceyda_portfolio/image/icons/aws_eideov.png',
   pm2: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1669800920/ceyda_portfolio/image/icons/pm2-v4_kcwqco.png',
+};
+export const mediumArticlesImages = {
+  programmingParadigms: "https://res.cloudinary.com/dxqyvjf5r/image/upload/v1679694220/L_P_C_rlew1l.png",
+  switchedMyCareer: "https://res.cloudinary.com/dxqyvjf5r/image/upload/v1679694095/careerswitch_izwupi.png",
+  todoList: "https://res.cloudinary.com/dxqyvjf5r/image/upload/v1668544997/ceyda_portfolio/image/web_project_screen/todolist-angular-pagepic_bbmeze.png",
+  gitGithub: "https://res.cloudinary.com/dxqyvjf5r/image/upload/v1679693800/git_sqia7j.png",
+  scopes: "https://res.cloudinary.com/dxqyvjf5r/image/upload/v1679693689/scopes_cmvc9s.png",
 };
