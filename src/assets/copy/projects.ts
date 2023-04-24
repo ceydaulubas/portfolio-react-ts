@@ -1,7 +1,36 @@
 import { projectImage } from '../../assets/common/links';
-const { blackJack, petAdopt, Tmbd, codeChat, halloweenShake, gipgy, weatherApi, easyInsurance, todoList } = projectImage;
+const { blackJack, petAdopt, Tmbd, codeChat, halloweenShake, gipgy, weatherApi, easyInsurance, todoList, spaceX, shoppingCart } = projectImage;
 
 export const projects = [
+  {
+    id: '1',
+    photo: petAdopt,
+    title: 'Pet Adopt',
+    year: '2020',
+    description: '  This website provides easy access and adoption to cats and dogs waiting for adoption.',
+    stack: 'MongoDB, Mongoose, Express.js, React, Node.js',
+    github: 'https://github.com/ceydaulubas/petAdopt',
+  },
+
+  {
+    id: '3',
+    photo: spaceX,
+    title: 'SpaceX App',
+    year: '2023',
+    description: 'This web application allows users to search for upcoming SpaceX launches by the date and name of each launch. Also gives general information about SpaceX.',
+    stack: 'React Js, Axios, Tailwind',
+    github: 'https://github.com/ceydaulubas/my-spacex-app-react',
+    website: 'https://my-spacex-app-react.netlify.app/',
+  },
+  {
+    id: '4',
+    photo: shoppingCart,
+    title: 'Shopping Cart',
+    year: '2023',
+    description: 'This project helps us filter items according to description, or tags. Moreover, you can add/remove the items to/from the shopping cart. It calculates the total amount of the cart.',
+    stack: 'React, Typescript, Context, Bootstrap',
+    github: 'https://github.com/ceydaulubas/shopping-cart',
+  },
   {
     id: '0',
     photo: blackJack,
@@ -13,13 +42,42 @@ export const projects = [
     website: 'https://blackjack-purejs.netlify.app/index.html',
   },
   {
-    id: '1',
-    photo: petAdopt,
-    title: 'Pet Adopt',
-    year: '2020',
-    description: '  This website provides easy access and adoption to cats and dogs waiting for adoption.',
-    stack: 'MongoDB, Mongoose, Express.js, React, Node.js',
-    github: 'https://github.com/ceydaulubas/petAdopt',
+    id: '5',
+    photo: weatherApi,
+    title: 'Weather Forecast',
+    year: '2021',
+    description: 'Weather forecast website gives information about weather like current weather, coming days weather, min-max temperatures, etc.',
+    stack: 'React Js, Axios, CSS',
+    github: 'https://github.com/ceydaulubas/reactjs-weather-api',
+  },
+  {
+    id: '6',
+    photo: Tmbd,
+    title: 'TMBD Page',
+    year: '2021',
+    description: 'TMDB is a web page',
+    stack: ' React Js, TMBD Api, Axios, SCSS, Material UI and bootstrap',
+    github: 'https://github.com/ceydaulubas/TMDb-react-api',
+  },
+  {
+    id: '7',
+    photo: todoList,
+    title: 'ToDoList',
+    year: '2021',
+    description: 'The first project that I created using the Angular framework and mocked JSON file.',
+    stack: ' Typecript, SCSS, Angular CLI',
+    github: 'https://github.com/ceydaulubas/ToDoList-Angular-CLI-FakeBackEnd',
+  },
+  {
+    id: '8',
+    photo: easyInsurance,
+    title: 'Easy Insurance',
+    year: '2021',
+    description:
+      ' Easy Insurance is an application that can see all invoices and add new invoices. Thanks to the filter feature people can filter and see invoices that they want to see directly.',
+    stack: 'React, Webpack, Babel',
+    github: 'https://github.com/ceydaulubas/react-webpack-babel',
+    website: 'https://easy-insurance.netlify.app/',
   },
   {
     id: '2',
@@ -31,45 +89,7 @@ export const projects = [
     github: 'https://github.com/eliachiarucci/codechat.git'
   },
   {
-    id: '3',
-    photo: weatherApi,
-    title: 'Weather Forecast',
-    year: '2021',
-    description: 'Weather forecast website gives information about weather like current weather, coming days weather, min-max temperatures, etc.',
-    stack: 'React Js, Axios, CSS',
-    github: 'https://github.com/ceydaulubas/reactjs-weather-api',
-  },
-  {
-    id: '4',
-    photo: Tmbd,
-    title: 'TMBD Page',
-    year: '2021',
-    description: 'TMDB is a web page',
-    stack: ' React Js, TMBD Api, Axios, SCSS, Material UI and bootstrap',
-    github: 'https://github.com/ceydaulubas/TMDb-react-api',
-  },
-  {
-    id: '5',
-    photo: todoList,
-    title: 'ToDoList',
-    year: '2021',
-    description: 'The first project that I created using the Angular framework and mocked JSON file.',
-    stack: ' Typecript, SCSS, Angular CLI',
-    github: 'https://github.com/ceydaulubas/ToDoList-Angular-CLI-FakeBackEnd',
-  },
-  {
-    id: '6',
-    photo: easyInsurance,
-    title: 'Easy Insurance',
-    year: '2021',
-    description:
-      ' Easy Insurance is an application that can see all invoices and add new invoices. Thanks to the filter feature people can filter and see invoices that they want to see directly.',
-    stack: 'React, Webpack, Babel',
-    github: 'https://github.com/ceydaulubas/react-webpack-babel',
-    website: 'https://easy-insurance.netlify.app/',
-  },
-  {
-    id: '7',
+    id: '9',
     photo: halloweenShake,
     title: 'Halloween Snake',
     year: '2020',
@@ -79,7 +99,7 @@ export const projects = [
     website: 'https://codebrokerad.github.io/halloweenSnake/',
   },
   {
-    id: '8',
+    id: '10',
     photo: gipgy,
     title: 'Giphy Api',
     year: '2021',
@@ -88,4 +108,5 @@ export const projects = [
     github: 'https://github.com/ceydaulubas/giphy-api-react',
     website: 'https://giphy-api-react.netlify.app',
   },
+
 ];
