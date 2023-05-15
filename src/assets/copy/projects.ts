@@ -1,5 +1,5 @@
 import { projectImage } from '../../assets/common/links';
-const { blackJack, petAdopt, Tmbd, codeChat, halloweenShake, gipgy, weatherApi, easyInsurance, todoList, spaceX, shoppingCart } = projectImage;
+const { blackJack, petAdopt, Tmbd, codeChat, halloweenShake, gipgy, weatherApi, easyInsurance, todoList, spaceX, shoppingCart, HappyCelebrationsHub } = projectImage;
 
 export const projects = [
   {
@@ -11,7 +11,16 @@ export const projects = [
     stack: 'MongoDB, Mongoose, Express.js, React, Node.js',
     github: 'https://github.com/ceydaulubas/petAdopt',
   },
-
+  {
+    id: '11',
+    photo: HappyCelebrationsHub,
+    title: 'Happy Celebrations Hub!',
+    year: '202',
+    description: '  Developed a web-based platform utilizing the Chat GPT API to generate and send personalized celebration messages, enhancing user engagement and helping busy individuals commemorate special occasions for their loved ones.',
+    stack: 'React, Javascript, Bootstrap, MongoDB, Mongoose, Express.js, Node.js',
+    github: 'https://github.com/ceydaulubas/suprise-fullstack-app-frontend',
+    github2: 'https://github.com/ceydaulubas/suprise-fullstack-app',
+  },
   {
     id: '3',
     photo: spaceX,

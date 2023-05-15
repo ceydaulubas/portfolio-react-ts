@@ -23,7 +23,8 @@ export const projectImage = {
   todoList:
     'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1668544997/ceyda_portfolio/image/web_project_screen/todolist-angular-pagepic_bbmeze.png',
   spaceX: "https://res.cloudinary.com/dxqyvjf5r/image/upload/v1682330327/Portfolio/spacex2_cc7a18.png",
-  shoppingCart: "https://res.cloudinary.com/dxqyvjf5r/image/upload/v1682331470/Portfolio/shoppingCart_jkl0aj.png"
+  shoppingCart: "https://res.cloudinary.com/dxqyvjf5r/image/upload/v1682331470/Portfolio/shoppingCart_jkl0aj.png",
+  HappyCelebrationsHub: "https://res.cloudinary.com/dxqyvjf5r/image/upload/v1683906873/register%20form/CelebrationsHub3_b5zmue.png"
 };
 export const links = {
   resume: 'https://www.canva.com/design/DAFZcinXSlU/VKlj6bvWtxqE-eecqXBCCA/view?utm_content=DAFZcinXSlU&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink',
