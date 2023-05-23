@@ -8,6 +8,9 @@ type StyledButtonProps = {
 };
 
 export const StyledButton = styled.a<StyledButtonProps>`
+ display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 1;
   padding: 0.4rem;
   transition: all 0.2s ease-in;
@@ -17,9 +20,10 @@ export const StyledButton = styled.a<StyledButtonProps>`
   font-weight: 500;
   letter-spacing: 0.08em;
   text-decoration: none;
-  width: fit-content;
+  width:100px;
   margin-right: 2rem;
   border: none;
+  cursor: pointer;
   ${({ color }) =>
     color === 'softPink' &&
     css`
