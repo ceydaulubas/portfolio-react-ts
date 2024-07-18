@@ -1,7 +1,14 @@
 import { mediumArticlesImages } from '../../assets/common/links';
-const { programmingParadigms, switchedMyCareer, todoList, gitGithub, scopes } = mediumArticlesImages;
+const { react19, programmingParadigms, switchedMyCareer, todoList, gitGithub, scopes } = mediumArticlesImages;
 
 export const mediumArticles = [
+    {
+        id: '5',
+        photo: react19,
+        title: 'Exploring React 19: New Features 🤩 and the Reasons Behind the Delayed Release😱',
+        website: 'https://medium.com/@ceydaulubas/exploring-react-19-new-features-and-the-reasons-behind-the-delayed-release-f1c2228151cf',
+        subject: "React, which many developers use with enthusiasm and follow new developments eagerly, released the first beta version of React 19 on April 25 and announced that it will be released at the beginning of summer 2024..."
+    },
     {
         id: '4',
         photo: programmingParadigms,
@@ -33,7 +40,7 @@ export const mediumArticles = [
     {
         id: '0',
         photo: scopes,
-        title: 'Function Scope vs Block Scope in JavaScript',
+        title: 'Scope in JavaScript',
         website: 'https://ceydaulubas.medium.com/javascript-scope-342a80604b00',
         subject: "Hi there! When I first started coding, I had trouble understanding the difference between function scope and block scope. Therefore, I took short useful notes for myself, and now I want to share them with you. I hope you will find answers to your question marks about this subject after reading my article ..."
     },

@@ -32,8 +32,7 @@ export const ArticleImage = styled.img`
   height: 80px;
   width: 80px;
   margin-right: 10px;
-  border-radius: 5px;
-  object-fit: cover;
+  object-fit: contain;
 `;
 
 export const ArticleInfo = styled.div`

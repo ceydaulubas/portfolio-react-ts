@@ -37,6 +37,7 @@ export const links = {
 
 export const icons = {
   react: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1670179353/ceyda_portfolio/image/icons/react_wxt0hz.png',
+  redux: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1721329277/ceyda_portfolio/image/icons/redux_logo_wrsvjz.png',
   nextjs: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1669651390/ceyda_portfolio/image/icons/414px-Nextjs-logo.svg_bjv1rb.png',
   node: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1669800919/ceyda_portfolio/image/icons/nodeJs-logo_gbmykl.png',
   express: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1669800919/ceyda_portfolio/image/icons/express-logo_vifblw.png',
@@ -49,9 +50,10 @@ export const icons = {
   pm2: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1669800920/ceyda_portfolio/image/icons/pm2-v4_kcwqco.png',
 };
 export const mediumArticlesImages = {
+  react19: "https://res.cloudinary.com/dxqyvjf5r/image/upload/v1721296005/ceyda_portfolio/image/medium_writings/dvvj6wnx7igwk1nzyccw.png",
   programmingParadigms: "https://res.cloudinary.com/dxqyvjf5r/image/upload/v1679694220/L_P_C_rlew1l.png",
-  switchedMyCareer: "https://res.cloudinary.com/dxqyvjf5r/image/upload/v1679694095/careerswitch_izwupi.png",
+  switchedMyCareer: "https://res.cloudinary.com/dxqyvjf5r/image/upload/v1721298059/ceyda_portfolio/image/medium_writings/we_can_do_it_gwfhan.webp",
   todoList: "https://res.cloudinary.com/dxqyvjf5r/image/upload/v1668544997/ceyda_portfolio/image/web_project_screen/todolist-angular-pagepic_bbmeze.png",
   gitGithub: "https://res.cloudinary.com/dxqyvjf5r/image/upload/v1679693800/git_sqia7j.png",
-  scopes: "https://res.cloudinary.com/dxqyvjf5r/image/upload/v1679693689/scopes_cmvc9s.png",
+  scopes: "https://res.cloudinary.com/dxqyvjf5r/image/upload/v1721302723/ceyda_portfolio/image/medium_writings/Scope_in_Javascript_1_aiwktn.png",
 };

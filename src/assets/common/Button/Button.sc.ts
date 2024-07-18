@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import { StyledTheme } from '../color';
 import { devices } from '../../../statics/devices';
-const { mobileS, mobileM, tabletS, tablet, laptop, laptopL, desktop, desktopL } = devices;
+const { tabletS} = devices;
 
 type StyledButtonProps = {
   color: 'softPink' | 'grey';
