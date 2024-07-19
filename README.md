@@ -15,9 +15,9 @@ Welcome to my personal portfolio website! This site showcases my projects, blog 
 
 ## Technologies Used
 
-- **React:** 
-- **TypeScript:** 
-- **Styled-components:**
+- **React** 
+- **TypeScript** 
+- **Styled-components**
 
 ## Installation and Setup
 
@@ -26,5 +26,11 @@ To run this project locally, follow these steps:
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/ceydaulubas/portfolio-react-ts.git
+
+2. **Install the node packages**
+   ```bash
    npm i
+
+3. **Start the project in your local**
+   ```bash
    npm start
