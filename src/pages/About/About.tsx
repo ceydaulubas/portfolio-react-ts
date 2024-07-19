@@ -50,7 +50,7 @@ const About = () => {
         <StyledTitle>About Me...</StyledTitle>
         <StyledTexts>
           <StyledText>
-            I was born in Kayseri, Turkey in 1993. In 2016, I moved to Istanbul
+            I was born in Kayseri, Turkey in 1993. In 2011, I moved to Istanbul
             to enroll in the International Trade and Business program at
             Yeditepe University. During my university years, I gained invaluable
             experience through internships at several companies, including
