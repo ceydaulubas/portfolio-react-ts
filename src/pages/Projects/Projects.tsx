@@ -15,6 +15,7 @@ interface Project {
   stack: string;
   github: string;
   github2?: string;
+  npm?: string;
   website?: string;
   type: string;
 }
@@ -104,6 +105,8 @@ const Projects = () => {
                 {item.website ? <Button color={"grey"} link={item.website} text={"Website"} /> : ""}
                 <Button color={"softPink"} link={item.github} text={"Github"} />
                 {item.github2 ? <Button color={"grey"} link={item.github2} text={"Github2"} /> : ""}
+                {item.npm ? <Button color={"grey"} link={item.npm} text={"Npm"} /> : ""}
+                
               </ButtonWrapper>
             </Card.Body>
           </Card>

@@ -1,7 +1,18 @@
 import { projectImage } from '../../assets/common/links';
-const { blackJack, petAdopt, Tmbd, codeChat, halloweenShake, gipgy, weatherApi, easyInsurance, todoList, spaceX, shoppingCart, HappyCelebrationsHub, galleryWebPage } = projectImage;
+const { blackJack, petAdopt, Tmbd, codeChat, halloweenShake, gipgy, weatherApi, easyInsurance, todoList, spaceX, shoppingCart, HappyCelebrationsHub, galleryWebPage,sliderNpmPackage } = projectImage;
 
 export const projects = [
+  {
+    id: '13',
+    photo: sliderNpmPackage,
+    title: 'Slider npm Package',
+    year: 2024,
+    description: ' A customizable and reusable slider component built with React and styled-components. This component allows developers to easily implement a slider/carousel with various configuration options, such as the number of visible slides, navigation arrows, dots, and different directions.',
+    stack: 'React, Typescript, Styled-components',
+    github: 'https://github.com/ceydaulubas/slider#readme',
+    npm: 'https://www.npmjs.com/package/react-styled-slider-component',
+    type: 'Frontend'
+  },
   {
     id: '11',
     photo: HappyCelebrationsHub,
