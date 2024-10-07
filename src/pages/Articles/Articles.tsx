@@ -14,7 +14,7 @@ interface Article {
 const Articles = () => {
   // Create state for determining which articles will be shown on each page.
   const [currentPage, setCurrentPage] = useState(1);
-  const [pageSize] = useState(4); // Sayfa başına gösterilecek makale sayısı
+  const [pageSize] = useState(4); // The number of articles to be shown per page
 
   // Calculate the starting and ending points of the articles
   const startIndex = (currentPage - 1) * pageSize;
