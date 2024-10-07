@@ -51,6 +51,7 @@ export const icons = {
   pm2: 'https://res.cloudinary.com/dxqyvjf5r/image/upload/v1669800920/ceyda_portfolio/image/icons/pm2-v4_kcwqco.png',
 };
 export const mediumArticlesImages = {
+  npmPackage:"https://res.cloudinary.com/dxqyvjf5r/image/upload/v1728292483/ceyda_portfolio/image/medium_writings/npm_package_iknlyl.png",
   react19: "https://res.cloudinary.com/dxqyvjf5r/image/upload/v1721296005/ceyda_portfolio/image/medium_writings/dvvj6wnx7igwk1nzyccw.png",
   programmingParadigms: "https://res.cloudinary.com/dxqyvjf5r/image/upload/v1679694220/L_P_C_rlew1l.png",
   switchedMyCareer: "https://res.cloudinary.com/dxqyvjf5r/image/upload/v1721298059/ceyda_portfolio/image/medium_writings/we_can_do_it_gwfhan.webp",

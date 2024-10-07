@@ -1,7 +1,14 @@
 import { mediumArticlesImages } from '../../assets/common/links';
-const { react19, programmingParadigms, switchedMyCareer, todoList, gitGithub, scopes } = mediumArticlesImages;
+const { npmPackage,react19, programmingParadigms, switchedMyCareer, todoList, gitGithub, scopes } = mediumArticlesImages;
 
 export const mediumArticles = [
+    {
+        id: '6',
+        photo: npmPackage,
+        title: 'Building and Publishing My First NPM Package',
+        website: 'https://medium.com/@ceydaulubas/building-and-publishing-my-first-npm-package-7a0182fb920b',
+        subject: "I’m thrilled to share one of the most exciting milestones in my development journey — publishing my very own NPM package!"
+    },
     {
         id: '5',
         photo: react19,
