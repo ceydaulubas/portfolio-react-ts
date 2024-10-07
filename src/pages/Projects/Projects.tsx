@@ -86,7 +86,7 @@ const Projects = () => {
       <StyledProjects>
         {filteredProjects.map((item: Project) => (
           <Card key={item.id} style={{ width: "35rem", marginBottom: "1rem", backgroundColor: "transparent", border: "white", borderStyle: "dotted" }}>
-            <a href={item.github}>
+            <a href={item.npm ? item.npm : item.github}>
               <Card.Img variant="top" src={item.photo}></Card.Img>
             </a>
             <Card.Body>
