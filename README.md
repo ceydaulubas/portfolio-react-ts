@@ -34,3 +34,6 @@ To run this project locally, follow these steps:
 3. **Start the project in your local**
    ```bash
    npm start
+
+## Live Website
+You can view the live version of the portfolio [here](https://ceydaulubas.com/).
